@@ -16,6 +16,10 @@
 
   - [claude-skills](https://github.com/tommaone/claude-skills) — multi-agent engineering methodology: Splinter orchestrator, specialist agents (Leonardo/Donatello/Raphael/Michelangelo), adversarial Shredder
   review gate, self-improving turtle evolution layer
+  - [opencode-turtle-skills](https://github.com/tommaone/opencode-turtle-skills) — the opencode port of the turtle squad, with a permanent turtle-dojo skill that loads on every session
+  - [turtleatlas-mcp](https://github.com/tommaone/turtleatlas-mcp) — a template MCP knowledge server (marked as GitHub template) that serves structured Markdown knowledge to any LLM via MCP tools.
+  No RAG, no vector DB.
+  - [turtleql](https://github.com/tommaone/turtleql) — natural language to SQL web UI that uses turtleatlas-mcp as its knowledge backend
 
   ## Open to
 
