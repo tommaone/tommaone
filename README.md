@@ -1,36 +1,47 @@
 # Martin Tomecka
 
-Platform engineer. 12 years enterprise — insurance, tax, payments, provider search.
+AI systems engineer. 12 years enterprise platform engineering — insurance, tax, payments, provider search.
 
-Backend, infrastructure, and domain-driven systems. I tinker with AI tooling on the side — agent orchestration, MCP servers, local inference setups — mostly to scratch my own itch and see what sticks.
+Building AI tooling that actually gets used: MCP servers, NL→SQL, voice dictation, multi-agent orchestration. Validate on myself first, scale to production.
 
-## What I do
+## AI Integration
 
-- **Backend services** — Java (OSGi, Spring Boot 3.x, Quarkus), Kafka/Redpanda, Apache Camel, REST/event-driven architecture
-- **Infrastructure** — Kubernetes, Helm, ArgoCD, Terraform, HashiCorp Vault, Docker
-- **Domain depth** — insurance claim lifecycle, tax calculation (15+ countries), provider search, payment processing, DB2/SQL
+### MCP Knowledge Infrastructure
 
-## Side projects
+- [turtleatlas-mcp](https://github.com/tommaone/turtleatlas-mcp) — generic MCP server that turns a folder of Markdown files and table schemas into a structured knowledge base for any LLM. Two-tier model: experts for quick context, journeys for deep process understanding. No vectors, no embeddings — just tools that pull what the LLM needs when it needs it.
+- [turtleatlas-w40k-11e](https://github.com/tommaone/turtleatlas-w40k-11e) — turtleatlas-mcp applied to Warhammer 40,000 11th Edition. Merges BSData unit profiles with official MFM points data, DPP computation engine, MCP tools for LLM access (WIP). A real-world test of the pattern on a complex, version-fractured domain. Not affiliated with Games Workshop.
 
-### Agent tooling (TMNT turtle squad)
+### Local Speech Recognition
 
-A pattern for structuring AI coding agents as a team of specialists, ported across several platforms.
+- [opencode-voice-call](https://github.com/tommaone/opencode-voice-call) — voice dictation for opencode and VS Code. Local transcription via whisper.cpp with the [Whisper small.en](https://huggingface.co/ggerganov/whisper.cpp) model from Hugging Face (~466MB, runs fully on-device). `/call` and `/hang` slash commands, silence detection, zero API cost. It works.
 
-- [turtle-squad-core](https://github.com/tommaone/turtle-squad-core) — shared rules and agent definitions, platform-agnostic.
-- [claude-skills](https://github.com/tommaone/claude-skills) — turtle squad for Claude Code
+### NL→SQL
+
+- [turtleql](https://github.com/tommaone/turtleql) — natural language to SQL web UI. Pluggable LLM providers (Anthropic, Bedrock, Azure OpenAI), pluggable database adapters, turtleatlas-mcp integration for schema context.
+
+## Agent Orchestration
+
+A pattern for structuring AI coding agents as a team of specialists — ported across platforms so the squad works wherever you are.
+
+- [turtle-squad-core](https://github.com/tommaone/turtle-squad-core) — shared agent definitions and dojo rules, platform-agnostic source of truth
+- [claude-skills](https://github.com/tommaone/claude-skills) — squad for Claude Code: Splinter orchestrator, specialists, adversarial Shredder review gate, evolution layer that learns from each session
 - [copilot-turtle-skills](https://github.com/tommaone/copilot-turtle-skills) — same squad for GitHub Copilot CLI
-- [opencode-turtle-skills](https://github.com/tommaone/opencode-turtle-skills) — same squad for opencode
+- [opencode-turtle-skills](https://github.com/tommaone/opencode-turtle-skills) — same squad for opencode (local Qwen on Ollama, zero API cost)
 - [kiro-turtle-skills](https://github.com/tommaone/kiro-turtle-skills) — same squad for Kiro IDE
 
-### Knowledge tools
+## Backend & Infrastructure
 
-- [turtleatlas-mcp](https://github.com/tommaone/turtleatlas-mcp) — MCP server that serves structured Markdown knowledge to LLMs. No vectors, no embeddings, just markdown files exposed as tools.
-- [turtleql](https://github.com/tommaone/turtleql) — natural language to SQL web UI. Pluggable LLM providers and database adapters.
+- Java (OSGi, Spring Boot 3.x, Quarkus), Kafka/Redpanda, Apache Camel, REST/event-driven architecture
+- Kubernetes, Helm, ArgoCD, Terraform, HashiCorp Vault, Docker
+- Insurance claim lifecycle, tax calculation (15+ countries), provider search, payment processing, DB2/SQL
 
-### Other
+## Side Projects
 
-- [opencode-voice-call](https://github.com/tommaone/opencode-voice-call) — voice dictation for opencode and VS Code with local whisper.cpp transcription
-- [turtledeck](https://github.com/tommaone/turtledeck) — swipeable reference card viewer for wargame datasheets
+- [turtledeck](https://github.com/tommaone/turtledeck) — swipeable reference card viewer for wargame datasheets. Not affiliated with Games Workshop.
+
+## Open to
+
+AI engineering roles. Preference for companies where the engineering problem is real and the solution doesn't need six months of management buy-in before you can start.
 
 ## Connect
 
