@@ -7,7 +7,7 @@ Platform engineer. 13 years enterprise — Java, Kafka, and everything that keep
 ### MCP Knowledge Infrastructure
 
 - [turtleatlas-mcp](https://github.com/tommaone/turtleatlas-mcp) — generic MCP server that turns a folder of Markdown files and table schemas into a structured knowledge base for any LLM. Two-tier model: experts for quick context, journeys for deep process understanding. No vectors, no embeddings — just tools that pull what the LLM needs when it needs it.
-- [turtleatlas-w40k-11e](https://github.com/tommaone/turtleatlas-w40k-11e) — turtleatlas-mcp applied to Warhammer 40,000 11th Edition. Merges BSData unit profiles with official MFM points data, DPP computation engine, MCP tools for LLM access. Example of the pattern on a complex, version-fractured domain. Not affiliated with Games Workshop.
+- [turtleatlas-w40k-11e](https://github.com/tommaone/turtleatlas-w40k-11e) — turtleatlas-mcp applied to Warhammer 40,000 11th Edition. Merges BSData unit profiles with official MFM points data, DPP computation engine, MCP tools for LLM access. Example of the pattern on a complex, version-fractured domain. Not affiliated with Games Workshop. Sample output from phase 1 - unit ranking per disposition (playstyle) x army - https://htmlpreview.github.io/?https://raw.githubusercontent.com/tommaone/turtleatlas-w40k-11e/main/findings/index.html
 - Data Artisan MCP (Allianz Technology, internal) — MCP server for Claude Code covering a large enterprise codebase and database layer. Schema context and documentation retrieval for AI-assisted development.
 
 ### Local Speech Recognition
