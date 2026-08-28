@@ -41,7 +41,7 @@ Started out of necessity and interest — no AI team in the tribe, but the compa
 
 ## Open to
 
-AI engineering roles, or AI-first Java engineering — ideally both. Looking for companies where the engineering problem is real and the solution doesn't need six months of management buy-in before you can start.
+Entry AI engineering roles, or AI-first Java engineering — ideally both. Looking for companies where the engineering problem is real and the solution doesn't need six months of management buy-in before you can start.
 
 ## Connect
 
