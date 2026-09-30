@@ -1,6 +1,6 @@
 # Martin Tomecka
 
-Platform engineer. 13 years enterprise — Java, Kafka, and everything that keeps insurance, tax, and payment systems running. More recently building AI tooling: MCP servers, NL→SQL, voice dictation, multi-agent orchestration.
+Core software platform engineer. 13 years enterprise — Java, Kafka, and everything that keeps insurance, tax, and payment systems running. More recently building AI tooling: MCP servers, NL→SQL, voice dictation, multi-agent orchestration.
 
 ## AI Integration
 
